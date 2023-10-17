@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>あなたの今日の運勢予報</title>
+</head>
+
+<body class="text-center">
+  <div class="navbar-brand text-white bg-dark">あなたの今日の運勢は？</div>
+  <div>
+    <p>
+    <h1 class="p-3">あなたの運勢を天気に例えて診断します！</h1>
+    </p>
+    <h3 class="p-1">診断したい名前を入れてください。</h3>
+    <input id="user_name" type="text" class="form-control-lg" value="" placeholder="例) 診断 太郎">
+    <button id="diagnosis" class="btn-secondary btn-lg bi bi-brightness-high-fill" onclick="push()">診断</button>
+  </div>
+  <p>
+  <div id="result">
+    <div class="card card-header text-white bg-secondary">
+      <h4 calss="card-body">診断結果</h4>
+    </div>
+    <div>
+      <p id="input_text" class="card card-text">ここに入れる</p>
+    </div>
+  </div>
+  <a href="https://twitter.com/intent/tweet?button_hashtag=あなたの今日の運勢予報&ref_src=twsrc%5Etfw"
+  class="twitter-hashtag-button" data-text="診断結果の文章" data-show-count="false">Tweet #あなたの今日の運勢予報</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+  <script src="diagnosis.js"></script>
+</body>
+
+</html>
